@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://ipv6314.github.io/DC-RWD-404-NotFound/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://ipv6314.github.io/DC-RWD-404-NotFound/">
       Solution
     </a>
     <span> | </span>
