@@ -1,12 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .head {
-  position: absolute;
-  top: 40px;
-  left: 50px;
+  margin-bottom: 1rem;
 }
 
 .head span {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 25px;
   text-transform: uppercase;
 }
@@ -14,8 +30,9 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .container .grid_element {
@@ -32,41 +49,27 @@
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 15px;
+  overflow: hidden;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .container .grid_element:nth-child(1) img {
-  position: absolute;
-  top: 100px;
-  left: 77px;
-  width: 539px;
-  height: 447px;
+  margin: auto;
+  width: 100%;
 }
 
 .container .grid_element:nth-child(2) h1 {
-  position: absolute;
-  display: block;
   font-weight: bold;
   font-size: 64px;
-  top: 100px;
-  left: 735px;
-  width: 585px;
 }
 
 .container .grid_element:nth-child(2) p {
-  position: absolute;
-  width: 381px;
-  height: 108px;
-  top: 330px;
-  left: 735px;
-  display: block;
   font-size: 24px;
   line-height: 36px;
 }
 
 .container .grid_element:nth-child(2) .btn {
-  position: absolute;
-  top: 500px;
-  left: 735px;
   width: 216px;
   height: 68px;
   border-radius: 5px;
@@ -82,9 +85,7 @@
 }
 
 .pie {
-  position: absolute;
-  top: 600px;
-  bottom: 24px;
+  margin-top: 2rem;
   height: 30px;
   width: 100%;
   display: -webkit-box;
@@ -93,6 +94,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pie p a {
