@@ -69,5 +69,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 ## Contact
 
 - Website [your-website.com](https://rnsuarez.net.ar)
-- GitHub [@your-username](https://{github.com/ipv6314})
+- GitHub [@ipv6314](https://github.com/ipv6314)
 - Twitter [@your-twitter](https://{twitter.com/your-username})
